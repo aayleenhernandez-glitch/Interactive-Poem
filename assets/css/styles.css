@@ -101,7 +101,7 @@ animation: gridPulse 6s ease-in-out infinite;
 	position: relative;
 	z-index: 2;
 
-	display; grid;
+	display: grid;
 	grid-template-columns: 1fr;
 	gap: 32px;
 
@@ -184,3 +184,62 @@ footer {
 	}
 }
 
+@keyframes rise {
+	0%, 100% {
+		transform: translateY(6px);
+		opacity: 0.6;
+}
+
+	50% {
+		transform: translateY(-13px);
+		opacity: 1;
+	}
+}
+
+@keyframes gridPulse {
+	0%, 100% {
+		opacity: 0.75;
+	}
+	50% {
+		opacity: 0.25;
+	}
+}
+
+@keyframes dustDrift {
+	from {
+		background-position: 47px -53px;
+	}
+}
+
+/* layouts */
+
+@media (max-width: 600px) {
+	.poem {
+		gap: 24px;
+		padding: 25px 15px;
+	}
+
+	.line {
+		font-size: 23px;
+	}
+
+	.gold-grid {
+		background-size: 25px 25px; 
+	}
+
+	footer {
+		font-size: 8px;
+		letter-spacing: 2px;
+	}
+}
+
+/* ads */
+
+@media (prefers-reduced-motion: reduce) {
+	.stars,
+	.gold-grid,
+	.line,
+	.sparkles {
+		animation: none;
+	}
+}
