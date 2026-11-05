@@ -133,3 +133,54 @@ animation: gridPulse 6s ease-in-out infinite;
 .line-two span {
 	color: #d6ad62;
 }
+
+/* line animations */
+
+.line-one {
+	animation: float 6s ease-in-out infinite;
+}
+
+.line-two {
+	animation: float 6s ease-in-out -2s infinite;
+}
+
+.line-three {
+	color: #ffe2a2;
+	animation: rise 6s ease-in-out infinite;
+}
+
+/* deco */
+
+.sparkles {
+	font-size: 26px;
+	color: #e9bf79;
+	letter-spacing: 12px;
+	animation: rise 6s easse-in-out infinite;
+}
+
+/* footer */
+
+footer {
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	right: 0;
+
+	text-align:center;
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	letter-spacing: 3px;
+	color: #b6a185;
+}
+
+/* animations */
+
+@keyframes float {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-7px);
+	}
+}
+
