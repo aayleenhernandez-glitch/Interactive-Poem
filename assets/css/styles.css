@@ -299,3 +299,16 @@ footer {
         animation: none;
     }
 }
+
+.golden-dust-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url("../img/golden-dust.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.45;
+    mix-blend-mode: screen;
+    pointer-events: none;
+    z-index: 0;
+}
