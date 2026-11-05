@@ -31,3 +31,48 @@ body {
 
 	color: #f3e4c8
 }
+
+/* grid style */
+
+.gold-grid {
+	position:absolute;
+	inset: 12px;
+
+	background-image: repeating-linear-gradient(
+		#b68a4d44 1px,
+		transparent 1px,
+	),
+	linear-gradient(
+		90deg,
+		#b68a4d44 1px,
+		transparent 1px
+	);
+
+background-size: 32px 32px;
+
+mask-image: linear-gradient(
+	to bottom, 
+	black,
+	transparent 95%);
+
+animation: gridPulse 6s ease-in-out infinite;
+}
+
+/* the dust particles */
+
+.stars {
+	position: absolute;
+	inset: 0;
+
+	background-image:
+		radial-gradient(
+			#ffe5a8 1px,
+			transparent 1.5px
+		)
+		;
+
+	background-size: 47px 53px;
+	opacity: 0.28;
+
+	animation: dustDrift 12s linear infinite;
+}
