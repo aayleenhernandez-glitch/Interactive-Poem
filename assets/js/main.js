@@ -50,3 +50,12 @@ cages.addEventListener("click", function() {
     cages.classList.add("play");
 });
 
+const gold = document.querySelector(".gold");
+
+gold.addEventListener("click", function() {
+    console.log("Gold was clicked!");
+
+    gold.classList.remove("play");
+    void gold.offsetWidth;
+    gold.classList.add("play");
+});
