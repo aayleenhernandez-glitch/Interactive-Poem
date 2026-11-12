@@ -29,3 +29,14 @@ dust.addEventListener("click", function() {
     void dust.offsetWidth;
     dust.classList.add("play");
 });
+
+const built = document.querySelector(".built");
+
+built.addEventListener("click", function() {
+    console.log("Built was clicked!");
+
+    built.classList.remove("play");
+    void built.offsetWidth;
+    built.classList.add("play");
+});
+
