@@ -19,3 +19,13 @@ made.addEventListener("click", function() {
     void made.offsetWidth;
     made.classList.add("play");
 });
+
+const dust = document.querySelector(".dust");
+
+dust.addEventListener("click", function() {
+    console.log("Dust was clicked!");
+
+    dust.classList.remove("play");
+    void dust.offsetWidth;
+    dust.classList.add("play");
+});
