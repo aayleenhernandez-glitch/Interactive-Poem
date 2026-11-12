@@ -416,7 +416,7 @@ footer {
 }
 
 .cages.play {
-    animation: shake 0.5s linear;
+    animation: shake 0.5s linear 3;
 }
 @keyframes shake {
     0% {
