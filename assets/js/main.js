@@ -40,3 +40,13 @@ built.addEventListener("click", function() {
     built.classList.add("play");
 });
 
+const cages = document.querySelector(".cages");
+
+cages.addEventListener("click", function() {
+    console.log("Cages was clicked!");
+
+    cages.classList.remove("play");
+    void cages.offsetWidth;
+    cages.classList.add("play");
+});
+

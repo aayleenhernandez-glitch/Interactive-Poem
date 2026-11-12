@@ -408,3 +408,33 @@ footer {
         transform: translate(35px, -40px);
     }
 }
+
+/* cages anim */
+.cages {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cages.play {
+    animation: shake 0.5s linear;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    20% {
+        transform: translateX(-10px) rotate(-8deg);
+    }
+    40% {
+        transform: translateX(10px) rotate(8deg);
+    }
+    60% {
+        transform: translateX(-12px) rotate(-10deg);
+    }
+    80% {
+        transform: translateX(12px) rotate(10deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
