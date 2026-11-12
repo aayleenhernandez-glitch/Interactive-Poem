@@ -59,3 +59,13 @@ gold.addEventListener("click", function() {
     void gold.offsetWidth;
     gold.classList.add("play");
 });
+
+const dream = document.querySelector(".dream");
+
+dream.addEventListener("click", function() {
+    console.log("Dream was clicked!");
+
+    dream.classList.remove("play");
+    void dream.offsetWidth;
+    dream.classList.add("play");
+});

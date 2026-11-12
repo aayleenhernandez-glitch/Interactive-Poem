@@ -467,3 +467,33 @@ footer {
         text-shadow: none;
     }
 }
+
+/* dream anim */
+.dream {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dream.play {
+    animation: dream 3s ease-in-out;
+}
+
+@keyframes dream {
+    0% {
+        transform: translateY(0px) scale(1) rotate(0deg);
+        color: #f3e4c8;
+        text-shadow: none;
+    }
+    50% {
+        transform: translateY(-25px) scale(1.15) rotate(-3deg);
+        color: #fffdf0;
+        text-shadow: 0 0 15px #fffbe5,
+                     0 0 30px #ffebaa,
+                     0 0 45px #ffebaa;
+    }
+    100% {
+        transform: translateY(0) scale(1) rotate(0deg);
+        color: #f3e4c8;
+        text-shadow: none;
+    }
+}
