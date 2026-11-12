@@ -1,4 +1,4 @@
-/* styles.css */{
+/* styles.css */
 
 * {
 	box-sizing:border-box;
@@ -243,3 +243,26 @@ footer {
 		animation: none;
 	}
 }
+
+/* more anim */ 
+.flight {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.flight.flying {
+	animation: flight 2.5s ease-in; 
+}
+
+@keyframes flight {
+	0% {
+		transform: translate(0,0) rotate(0deg);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate(80px, -100px) rotate(20deg);
+		opacity: 0;
+	}
+}
+
