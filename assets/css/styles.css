@@ -292,7 +292,6 @@ footer {
 
 
 @media (prefers-reduced-motion: reduce) {
-<<<<<<< HEAD
 	.stars,
 	.gold-grid,
 	.line,
@@ -323,15 +322,6 @@ footer {
 	}
 }
 
-=======
-    .stars,
-    .gold-grid,
-    .line,
-    .sparkles {
-        animation: none;
-    }
-}
-
 .golden-dust-bg {
     position: absolute;
     inset: 0;
@@ -344,4 +334,25 @@ footer {
     pointer-events: none;
     z-index: 0;
 }
->>>>>>> 88879d8df7fcfc77c765dfdb89f4e2b50c612f26
+
+/* clicking made*/
+.made {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.made.play {
+    animation: grow 1s ease-out;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+}
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
